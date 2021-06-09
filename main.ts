@@ -23,6 +23,10 @@ basic.forever(function () {
     Obstacle_2.set(LedSpriteProperty.Y, 0)
     Obstacle_3.set(LedSpriteProperty.Y, 0)
     Obstacle_4.set(LedSpriteProperty.Y, 0)
+    Obstacle_1.set(LedSpriteProperty.X, randint(0, 5))
+    Obstacle_2.set(LedSpriteProperty.X, randint(0, 5))
+    Obstacle_3.set(LedSpriteProperty.X, randint(0, 5))
+    Obstacle_4.set(LedSpriteProperty.X, randint(0, 5))
 })
 basic.forever(function () {
     if ((Obstacle_1.get(LedSpriteProperty.X) == sprite.get(LedSpriteProperty.X) || Obstacle_2.get(LedSpriteProperty.X) == sprite.get(LedSpriteProperty.X) || (Obstacle_3.get(LedSpriteProperty.X) == sprite.get(LedSpriteProperty.X) || Obstacle_4.get(LedSpriteProperty.X) == sprite.get(LedSpriteProperty.X))) && (Obstacle_1.get(LedSpriteProperty.Y) == sprite.get(LedSpriteProperty.Y) || Obstacle_2.get(LedSpriteProperty.Y) == sprite.get(LedSpriteProperty.Y) || (Obstacle_3.get(LedSpriteProperty.Y) == sprite.get(LedSpriteProperty.Y) || Obstacle_4.get(LedSpriteProperty.Y) == sprite.get(LedSpriteProperty.Y)))) {
